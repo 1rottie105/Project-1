@@ -4,11 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Enter Title of HW Here</title>
+  <title>Tip Calculator (Project 1)</title>
 </head>
 <body>
-  <!-- Enter HTML here. -->
-
+  <form>
+    <label for ="bill">Enter Total Bill Without Tip</label>
+    <input type="number" ide="bill"/><br>
+    <select id="percentage">
+      <option value="fifteen">15%</option>
+      <option value="twenty">20%</option>
+      <option value="twenty-five">25%</option>
+    </select><br>
+    <input type="submit" value="Calculate Tip"/><br>
+    <label for = "tip">Tip: </label>
+    <output id=tip></output><br>
+    <label for = "total">Total: </label>
+    <output id=total></output>
+  </form>
   <script src="scripts.js"></script>
 </body>
 </html>
