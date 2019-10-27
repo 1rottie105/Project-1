@@ -34,6 +34,6 @@ const total = document.querySelector("#total");
 form.addEventListener("submit", function event){
 event.preventDefault();
 console.log(bill.value, percent.value, tip.value, total.value)
-tip.textContent = FindTip(bill,ConvertPercent(percent))
-total.textContent = FindTotal(bill, FindTip(bill, ConvertPercent(percent)))
+tip.textContent = FindTip(bill.value,ConvertPercent(percent.value))
+total.textContent = FindTotal(bill.value, FindTip(bill.value, ConvertPercent(percent.value)))
 }
